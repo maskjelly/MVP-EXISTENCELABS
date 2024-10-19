@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import styles from "./page.module.css";
 import Chat from "../../components/chat";
-import WeatherWidget from "../../components/weather-widget";
 import { getWeather } from "../../utils/weather";
 import FileViewer from "../../components/file-viewer";
 
@@ -42,7 +41,7 @@ const FunctionCalling = () => {
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.column}>
-          <WeatherWidget {...weatherData} />
+          
           <FileViewer />
         </div>
         <div className={styles.chatContainer}>
